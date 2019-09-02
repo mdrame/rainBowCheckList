@@ -1,3 +1,6 @@
+<h1 align="center" GuessFlag </h1>
 
-<h1> Out put </h1>
-<img src="output.png"/>
+
+
+
+<p align="center"> <img align="center" src="outputimage.png"> </p>
