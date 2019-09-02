@@ -1,3 +1,9 @@
+from random import shuffle
+
+#colors list
+colorsDitionary = ["\033[95m", "\033[92m", "\033[93m", "\033[91m"]
+shuffle(colorsDitionary)
+
 
 checklist = list() # empty list
 
@@ -116,5 +122,5 @@ def test(): # THIS IS A TEST FUNCTION ! - - DONT'T CALL IT --``
 running = True
 while running:
     selection = input(
-        "Press A to Add to list, R to Read from list, PL to Display list, U to Update item, D to Destroy item, M to Mark Complete/Incomplete, and Q to quit:\n\n  ~ ")
+        f"{colorsDitionary[0]} Press A to Add to list, R to Read from list, PL to Display list, U to Update item, D to Destroy item, M to Mark Complete/Incomplete, and Q to quit:\n\n  ~ ")
     running = select(selection)
