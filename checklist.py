@@ -30,15 +30,16 @@ def list_all_items(): # list all code in array/note
 
 # Mark complete
 def mark_completed(index): # add color to the output of mark_completed list.
-    #marked = checklist[index]
-    checklist[index] = checklist[index] + ": √"
+
+    checklist[index] = "√" + checklist[index]
     return checklist
 
 # Mark incomplete
 def not_marked(index):
-    unconcatinate = checklist[index]
-    unconcatinate = checklist[index][0:len(checklist[index]-3)]
-    return checklist # basically returning the exact same screen.
+
+    checklist[index]= checklist[index][1:len(checklist[index])]
+    return checklist
+
 
 
 def select(function_code):
@@ -88,7 +89,7 @@ def select(function_code):
 
 
     elif function_code == "Q":
-        return false
+        return False #TERMINATE PROGRAME
 
     # Catch all
     else:
@@ -96,7 +97,7 @@ def select(function_code):
 
     return True
 
-def test():
+def test(): # THIS IS A TEST FUNCTION ! - - DONT'T CALL IT --``
 
     create("Black")
     create("White")
